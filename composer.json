@@ -1,0 +1,24 @@
+{
+    "name": "helpim/api-client-php",
+    "description": "Helpim API. PHP client",
+    "homepage": "https://help-im.ru/",
+    "keywords": ["api", "helpim"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Helpim",
+            "email": "it@help-im.ru"
+        }
+    ],
+    "support": {
+        "email": "it@help-im.ru"
+    },
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {"Helpim\\": "lib/"}
+    }
+}
+
