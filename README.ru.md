@@ -47,10 +47,15 @@ function sendOrder()
     $api = new \Helpim\Api\Client\HttpClient($defaultFields);
     
     $newOrder = [
-        'id' => 12345,
-        'number' => 'ABC12345',
-        'name' => 'Иванов Иван',
-        'phone' => '+7 999 123 4567'
+        
+        'external' => [
+          'id' => 12345,
+          'number' => 'ABC12345'
+        ],
+        'customer' => [
+          'fullName' => 'Иванов Иван',
+          'phoneNumber1' => '+7 999 123 4567'
+        ]
     ];
     
     try {
